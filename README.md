@@ -38,7 +38,7 @@ python-jose
 ### Configuring the ```config.py``` file
 
 
-- File path: ```src/config.py```
+- File path: ```auth_flask/config.py```
 
 
 #### Creating a function to get the outh providers from github and google.
