@@ -132,12 +132,12 @@ def verify_token(token):
 def logout():
     """Log the user out and clear the session"""
     session.clear()
-    # return redirect(
-    #     f"https://{config.AUTH0_DOMAIN}/v2/logout?" + urlencode({
-    #         "returnTo": url_for('index', _external=True),
-    #         "client_id": config.CLIENT_ID,
-    #     }, quote_via=quote_plus)
-    # )
+    return redirect(
+        f"https://{config.AUTH0_DOMAIN}/v2/logout?" + urlencode({
+            "returnTo": url_for('index', _external=True),
+            "client_id": config.CLIENT_ID,
+        }, quote_via=quote_plus)
+    )
     return redirect(url_for('index'))
 
 @app.route('/')
