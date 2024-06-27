@@ -33,7 +33,11 @@ python-jose
 ```pip3 install -r requirements.txt```
 
 
-
+### To run
+```
+cd auth_flask
+python3 main.py 
+```
 
 ### Configuring the ```config.py``` file
 
