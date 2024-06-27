@@ -21,8 +21,9 @@ In this documentation, we will understand the integration of auth0 into fask.
 ```
 📁 requirements.txt -----
 
-
-pip3 install Flask requests python-jose
+Flask
+requests
+python-jose
 ```
 
 
